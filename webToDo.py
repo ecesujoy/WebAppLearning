@@ -13,6 +13,10 @@
 # need to add in version control>git
 # create a repo in github, copy the url, "pycharm>git>ManageRemote>add the url"
 
+# to create another page in the wepapp, write click on root folder(WebAppToDo)>
+# create a file, named "pages", create a py file inside it(ex: 2nd page.py)
+# now two pages will show, (webToDo, 2nd page)
+
 import streamlit as st
 import webfunction
 
@@ -26,6 +30,9 @@ def addTodo():
 
 st.title("My toDo app")
 st.subheader("Choose an item")
+# html tags allowed only in write() method
+st.write("It will looks <b>better</b>",
+         unsafe_allow_html=True)
 
 for index, item in enumerate(todoList):
     checkboxes = st.checkbox(item, key=item)

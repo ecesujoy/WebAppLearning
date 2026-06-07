@@ -26,6 +26,9 @@ def addTodo():
 
 st.title("My toDo app")
 st.subheader("Choose an item")
+# html tags allowed only in write() method
+st.write("It will looks <b>better</b>",
+         unsafe_allow_html=True)
 
 for index, item in enumerate(todoList):
     checkboxes = st.checkbox(item, key=item)

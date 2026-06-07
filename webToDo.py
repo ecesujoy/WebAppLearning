@@ -11,6 +11,7 @@
 # "pip freeze" -> will list all the required pkg names
 # "pip freeze > requirements.txt" -> will write those pkgs in the req.txt file
 # need to add in version control>git
+# create a repo in github, copy the url, "pycharm>git>ManageRemote>add the url"
 
 import streamlit as st
 import webfunction

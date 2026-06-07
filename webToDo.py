@@ -1,7 +1,16 @@
 # A new project needs to create with only the files
 # required for this webToDo application
 # this is required for web deployment, so
-# Other users can use this application
+# other users can use this application
+
+# "pip freeze > requirements.txt" will create a requirements.txt file
+# in the project directory. This is the file which will uploaded to the
+# server where we host the webapp. So that the Server should know all the
+# Python libraries the server needs to install in order to run the app.
+# You are telling server what packages are required
+# "pip freeze" -> will list all the required pkg names
+# "pip freeze > requirements.txt" -> will write those pkgs in the req.txt file
+# need to add in version control>git
 
 import streamlit as st
 import webfunction
